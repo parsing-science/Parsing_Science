@@ -1,0 +1,18 @@
+
+body {
+  background-color: #53B3CB;
+  color: #090C08;
+}
+
+table{
+  background-color: white;
+}
+
+thead{
+  background-color: white;
+}
+
+.graph-wrapper{
+  background-color: white;
+  border:1px black;
+}
