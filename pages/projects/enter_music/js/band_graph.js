@@ -39,9 +39,17 @@ $(function() {
     function dragmove(d) {
       d.x += d3.event.dx;
       d.y += d3.event.dy;
-      //console.log("d.x: "+d.x)
-      //console.log("d.y: "+d.y)
-      d3.select(this).attr("transform", "translate(" + d.x + "," + d.y + ")");
+
+      console.log("d3.event.dx: "+d3.event.dx)
+      console.log("d3.event.dy: "+d3.event.dy)
+
+      var tempX=Math.max(0, Math.min(300, d.x))
+      var tempY=Math.max(0, Math.min(300, d.y))
+      console.log("d.x: "+d.x)
+      console.log("d.y: "+d.y)
+      console.log("tempX: "+tempX)
+      console.log("tempY: "+tempY)
+      d3.select(this).attr("transform", "translate(" + tempX + "," + tempY + ")");
     }
 	}
 
@@ -82,9 +90,14 @@ $(function() {
     function dragmove(d) {
       d.x += d3.event.dx;
       d.y += d3.event.dy;
-      //console.log("d.x: "+d.x)
-      //console.log("d.y: "+d.y)
-      d3.select(this).attr("transform", "translate(" + d.x + "," + d.y + ")");
+
+      var tempX=Math.max(0, Math.min(300, d.x))
+      var tempY=Math.max(0, Math.min(300, d.y))
+      console.log("d.x: "+d.x)
+      console.log("d.y: "+d.y)
+      console.log("tempX: "+tempX)
+      console.log("tempY: "+tempY)
+      d3.select(this).attr("transform", "translate(" + tempX + "," + tempY + ")");
     }
 	}
 

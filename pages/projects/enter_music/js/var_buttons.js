@@ -100,7 +100,12 @@ $(function() {
       var tempBand=Concerts.topBands[i].Band
       var tempCount=Concerts.topBands[i].Count
 
-      Concerts.AddCircle(tempBand, tempCount, 250*Math.random()+25, 250*Math.random()+25)
+      var tempX=250*Math.random()+25
+      var tempY=250*Math.random()+25
+      console.log("tempX: "+tempX)
+      console.log("tempY: "+tempY)
+
+      Concerts.AddCircle(tempBand, tempCount, tempX, tempY)
     }
     
   });
@@ -122,7 +127,12 @@ $(function() {
       var tempVenue=Concerts.topVenues[i].Venue
       var tempCount=Concerts.topVenues[i].Count
 
-      Concerts.AddRectangle(tempVenue, tempCount, 250*Math.random()+25, 250*Math.random()+25)
+      var tempX=250*Math.random()+25
+      var tempY=250*Math.random()+25
+      console.log("tempX: "+tempX)
+      console.log("tempY: "+tempY)
+
+      Concerts.AddRectangle(tempVenue, tempCount, tempX, tempY)
     }
     
   });
