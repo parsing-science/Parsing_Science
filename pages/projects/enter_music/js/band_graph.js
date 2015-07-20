@@ -16,7 +16,7 @@ $(function() {
 
 		var circle=bandCircle.append("svg:circle")
 			.attr("r", 10*radius)
-			.attr("stroke", "black")
+			.attr("stroke", "gray")
 			.attr("fill", "#F9C22E")
 
 		var text = bandCircle.append("svg:text")
@@ -68,7 +68,7 @@ $(function() {
 		var square=venueSquare.append("svg:rect")
 			.attr("height", 10*radius)
 			.attr("width", 10*radius)
-			.attr("stroke", "black")
+			.attr("stroke", "gray")
 			.attr("fill", "#F9C22E")
 
 		var text = venueSquare.append("svg:text")
@@ -95,8 +95,8 @@ $(function() {
 
       //console.log(d3.select(this).data())
 
-      var tempX=Math.max(0, Math.min(300, d.x))
-      var tempY=Math.max(0, Math.min(300, d.y))
+      var tempX=Math.max(0, Math.min(295, d.x))
+      var tempY=Math.max(0, Math.min(295, d.y))
       // console.log("d.x: "+d.x)
       // console.log("d.y: "+d.y)
       // console.log("tempX: "+tempX)
