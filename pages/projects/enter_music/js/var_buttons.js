@@ -102,8 +102,8 @@ $(function() {
 
       var tempX=250*Math.random()+25
       var tempY=250*Math.random()+25
-      console.log("tempX: "+tempX)
-      console.log("tempY: "+tempY)
+      // console.log("inittempX: "+tempX)
+      // console.log("inittempY: "+tempY)
 
       Concerts.AddCircle(tempBand, tempCount, tempX, tempY)
     }
@@ -119,7 +119,7 @@ $(function() {
     $(".graph-wrapper").hide()
     $("#venue-graph-wrapper").show()
 
-    console.log("TEST")
+    console.log("Venue Graph")
 
     d3.select("#venue-graph").selectAll("g").remove()
 
@@ -129,8 +129,8 @@ $(function() {
 
       var tempX=250*Math.random()+25
       var tempY=250*Math.random()+25
-      console.log("tempX: "+tempX)
-      console.log("tempY: "+tempY)
+      // console.log("inittempX: "+tempX)
+      // console.log("inittempY: "+tempY)
 
       Concerts.AddRectangle(tempVenue, tempCount, tempX, tempY)
     }
