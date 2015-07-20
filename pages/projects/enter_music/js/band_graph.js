@@ -38,7 +38,7 @@ $(function() {
 
     function dragmove(d) {
       d.x += d3.event.dx;
-      // d.y += d3.event.dy;
+      d.y += d3.event.dy;
 
       // console.log(d3.select(this).data())
 
