@@ -1,6 +1,7 @@
 //var_buttons sets up the actions for the clickable buttons on the page. This is the first JS called.
 // Nicole Carlson
 
+// Global object to attach other global objects/functions to
 window.Concerts={}
 
 Concerts.list=[]
@@ -13,7 +14,7 @@ Concerts.topVenues=[]
 
 Concerts.uniqueVenues=[]
 
-// Click function settings button.
+// Click function concert button. Collect user input on individual concerts
 $(function() {
   $('#concert-button').click(function(event) {
     event.preventDefault();
@@ -71,22 +72,24 @@ $(function() {
     $('#concert-date-input').val("")
     $('#concert-venue-input').val("")
     $('#concert-bands-input').val("")
+
+    function AddTableRow(date, venue, bands) {
+      var table = document.getElementById("concert-table");
+      var row = table.insertRow(-1);
+      var cell0 = row.insertCell(0);
+      var cell1 = row.insertCell(1);
+      var cell2 = row.insertCell(2);
+      cell0.innerHTML = date;
+      cell1.innerHTML = venue;
+      cell2.innerHTML = bands;
+    }
     
   });
 });
 
-function AddTableRow(date, venue, bands) {
-    var table = document.getElementById("concert-table");
-    var row = table.insertRow(-1);
-    var cell0 = row.insertCell(0);
-    var cell1 = row.insertCell(1);
-    var cell2 = row.insertCell(2);
-    cell0.innerHTML = date;
-    cell1.innerHTML = venue;
-    cell2.innerHTML = bands;
-}
 
-// Click function settings button.
+
+// Show top bands graph.
 $(function() {
   $('#top-bands-button').click(function(event) {
     event.preventDefault();
@@ -111,7 +114,7 @@ $(function() {
   });
 });
 
-// Click function settings button.
+// Show top venues graph.
 $(function() {
   $('#top-venues-button').click(function(event) {
     event.preventDefault();

@@ -1,6 +1,7 @@
 //var_buttons sets up the actions for the clickable buttons on the page. This is the first JS called.
 // Nicole Carlson
 
+//Global objet to attach global objects/functions to
 Climbing={};
 
 // Click function settings button.
