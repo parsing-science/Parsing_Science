@@ -1,4 +1,4 @@
-// band_graph.js 
+// band_graph.js: Sets up graphs for bands and venues
 // Nicole Carlson
 
 // Create Band Graph
